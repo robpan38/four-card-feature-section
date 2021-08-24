@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: pink;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    /* font */
+    --font: 'Poppins';
+    --fallbackFont: 'sans-serif';
+    font-size: 15px;
+    
+    /* primary */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* neutrals */
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    min-width: 945px;
+    min-height: 749px;
+    background-color: var(--veryLightGray);
+    font-family: var(--font, var(--fallbackFont));
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--veryDarkBlue);
+}
+
+.title2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+
+.content2 {
+    text-align: center;
+    width: 40%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--grayishBlue);
+}
+
+.grid {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-areas: "supervisor builder calculator"
+                         "supervisor karma calculator";
+    grid-template-columns: 1fr 0.7fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid * {
+    background-color: white;
+    position: relative;
+    width: 70%;
+}
+
+.title {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    color: var(--veryDarkBlue);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.content {
+    color: var(--grayishBlue);
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+.title, .content {
+    padding-left: 5%;
+}
+
+.supervisor {
+    grid-area: supervisor;
+    justify-self: end;
+    height: 38.29%;
+    border: 3px solid;
+    border-radius: 4%;
+    border-color: var(--cyan) transparent transparent transparent;
+    box-shadow: 0px 4px 4px 4px #EFEDED;
+}
+
+.supervisor img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 64px;
+    height: 64px;
+}
+
+.team-builder {
+    grid-area: builder;
+    height: 80%;
+    width: 100%;
+    align-self: end;
+    border: 3px solid;
+    border-radius: 4%;
+    border-color: var(--red) transparent transparent transparent;
+    box-shadow: 0px 4px 4px 4px #EFEDED;
+}
+
+.team-builder img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 64px;
+    height: 64px;
+}
+
+.karma {
+    grid-area: karma;
+    height: 80%;
+    width: 100%;
+    align-self: start;
+    border: 3px solid;
+    border-radius: 4%;
+    border-color: var(--orange) transparent transparent transparent;
+    box-shadow: 0px 4px 4px 4px #EFEDED;
+}
+
+.karma img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 64px;
+    height: 64px;
+}
+
+.calculator {
+    grid-area: calculator;
+    justify-self: start;
+    height: 38.29%;
+    border: 3px solid;
+    border-radius: 4%;
+    border-color: var(--blue) transparent transparent transparent;
+    box-shadow: 0px 4px 4px 4px #EFEDED;
+}
+
+.calculator img {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 64px;
+    height: 64px;
+}
