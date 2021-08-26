@@ -31,6 +31,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
+    max-width: 1920px;
     min-width: 945px;
     min-height: 749px;
     background-color: var(--veryLightGray);
@@ -180,4 +181,21 @@ body {
     bottom: 10%;
     width: 64px;
     height: 64px;
+}
+
+@media screen and (max-width: 860px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        height: 18%;
+    }
+
+    .supervisor {
+        height: 18%;
+    }
+
+    
 }
