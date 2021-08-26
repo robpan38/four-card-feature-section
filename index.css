@@ -36,6 +36,7 @@ body {
     min-height: 749px;
     background-color: var(--veryLightGray);
     font-family: var(--font, var(--fallbackFont));
+    transition: all 750ms ease;
 }
 
 .text {
@@ -184,18 +185,85 @@ body {
 }
 
 @media screen and (max-width: 860px) {
+    .main {
+        height: 150vh;
+        min-width: 315px;
+    }
+
     .grid {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .text {
-        height: 18%;
+        height: 20%;
+    }
+
+    .title1 {
+        font-size: 1.5rem;
+    }
+
+    .title2 {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 0.9rem;
+    }
+
+    .content {
+        font-size: 0.7rem;
+    }
+
+    .content2 {
+        font-size: 0.8rem;
+        text-align: center;
+        width: 80%;
     }
 
     .supervisor {
-        height: 18%;
+        height: 30%;
+        width: 50%;
+        justify-self: auto;
     }
 
-    
+    .supervisor img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .team-builder {
+        height: 30%;
+        width: 50%;
+        align-self: auto;
+    }
+
+    .team-builder img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .karma {
+        height: 30%;
+        width: 50%;
+        align-self: auto;
+    }
+
+    .karma img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .calculator {
+        height: 30%;
+        width: 50%;
+        justify-self: auto;
+    }
+
+    .calculator img {
+        height: 50px;
+        width: 50px;
+    }
 }
